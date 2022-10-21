@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
        반영구 홈페이지 입니다.
-       안녕하세요
+       안녕하세요. 반갑습니다.
        <div class='main'>
        
         <select className='select' onChange={(e)=>{
