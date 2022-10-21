@@ -4,13 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "client-build" : "cd client && npm ci && npm run build && cd ../",
-    "server-build" : "cd server && npm ci && cd ../",
-    "move-build" : "mv ./client/build ./server/",
-    "autobuild" : "npm run client-build && npm run server-build && npm run move-build",
-    "start" : "cd server && nodemon web.js",
+    "client-build": "cd client && npm ci && npm run build && cd ../",
+    "server-build": "cd server && npm ci && cd ../",
+    "move-build": "mv ./client/build ./server/",
+    "autobuild": "npm run client-build && npm run server-build && npm run move-build",
+    "start": "cd server && nodemon web.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "react-select": "^5.5.4"
+  }
 }
