@@ -8,8 +8,8 @@
     "server-build": "cd server && npm ci && cd ../",
     "move-build": "move ./client/build ./server/",
     "autobuild": "npm run client-build && npm run server-build && npm run move-build",
-    "start": "cd server && nodemon web.js",
-    "uplord" : "git init && git add . && git commit -m 'first' && git status && git branch -M main",
+    "start": "nodemon web.js",
+    "uplord1" : "git init && git add . && git commit -m 'first' && git status && git branch -M main",
     "uplord2" : "git push -u johnlovesyou@johnlovesyou.cafe24app.com:johnlovesyou_johnlovesyou main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

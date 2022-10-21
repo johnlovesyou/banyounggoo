@@ -1,6 +1,23 @@
 .App {
   text-align: center;
 }
+.main {
+  width: 2000px;
+  height: 1000px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+ul {
+  text-align: center;
+  width: 200px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: red;
+}
 
 .select {
   width: 200px;
@@ -8,6 +25,7 @@
   margin: 20px;
   padding: 10px;
   font-size: 30px;
+  
 }
 
 .select2 {
@@ -20,5 +38,5 @@
 }
 
 .show {
-  display: block;
+  display: inline;
 }
