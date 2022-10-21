@@ -9,7 +9,7 @@
     "move-build": "move ./client/build ./server/",
     "autobuild": "npm run client-build && npm run server-build && npm run move-build",
     "start": "nodemon web.js",
-    "uplord1" : "git init && git add . && git commit -m 'second' && git status && git branch -M main",
+    "uplord1" : "git init && git add . && git commit -m 'second' && git status",
     "uplord2" : "git push -u johnlovesyou@johnlovesyou.cafe24app.com:johnlovesyou_johnlovesyou main",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
