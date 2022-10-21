@@ -3,6 +3,7 @@ const path = require('path');
 const app = express();
 app.use(express.static(path.join(__dirname, '/server/build')));
 app.use(express.urlencoded({extended: true})) 
+const PORT = process.env.PORT || 8001;
 
 app.use(express.json());
 var cors = require('cors');
@@ -15,7 +16,7 @@ app.get('/', function(req, res) {
   res.sendFile(__dirname + '/server/build/index.html');
 });
 
-app.listen(8001, function(){
+app.listen(PORT, function(){
   console.log('server is running')
 });
 
