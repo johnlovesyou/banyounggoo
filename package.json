@@ -4,19 +4,19 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "delete-build": "cd server && rmdir /s /q build",
     "client-build": "cd client && npm ci && npm run build && cd ../",
     "server-build": "cd server && npm ci && cd ../",
-    "move-build": "move ./client/build ./server/",
-    "autobuild": "npm run client-build && npm run server-build && npm run move-build",
-    "start": "nodemon web.js",
-    "uplord1" : "git init && git add . && git commit -m 'second' && git status",
-    "uplord2" : "git push -u johnlovesyou@johnlovesyou.cafe24app.com:johnlovesyou_johnlovesyou main",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "autobuild": "npm run delete-build && npm run client-build && npm run server-build && move ./client/build ./server/",
+    "start": "cd server && node app.js",
+    "stop": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mysql": "^2.18.1",
     "react-select": "^5.5.4"
   }
 }
